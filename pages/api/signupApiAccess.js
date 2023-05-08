@@ -24,7 +24,7 @@ export default  function handle(req,res){
         }).then((result)=>{
            console.log(result.length)
            if(result.length>0){
-            res.json({result:'n'})
+            return res.json({result:'n'})
            }
             if(result.length<=0){
                
@@ -39,7 +39,7 @@ export default  function handle(req,res){
 
                 })
                 newaccount.save().then(()=>{
-                    res.json({result:'e'})
+                    return res.json({result:'e'})
                 })
 
                 
@@ -50,12 +50,12 @@ export default  function handle(req,res){
 
 
             }else{
-                    res.json({result:'n'})
+                    return res.json({result:'n'})
             }
            
 
         }).catch((err) =>{
-            res.json({result:'n'})
+            return res.json({result:'n'})
         })
 
     })
