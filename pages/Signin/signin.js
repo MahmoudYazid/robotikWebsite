@@ -30,7 +30,7 @@ export default function signin() {
   }
   const FetchData=async()=>{
 
-    fetch(MakeLoginApi(email,password)).then((response)=>{
+    await fetch(MakeLoginApi(email,password)).then((response)=>{
       response.json().then((data)=>{
         console.log(data)
         if(data._id==='n'){

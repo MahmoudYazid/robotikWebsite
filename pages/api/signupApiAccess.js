@@ -1,14 +1,17 @@
 import mongoose from "mongoose"
 import { ConnectionString } from "./schiema/productSchima"
 import { accountsModel } from "./schiema/AccountsSchima"
-import Cors from 'cors';
 
-const corsOptions = {
-    origin: ['http://185.211.4.42:3000/'],
-};
-const corsMiddleware = Cors(corsOptions);
-export default function handle(req,res){
-    corsMiddleware(req, res, () => {
+
+
+export default  function handle(req,res){
+
+    res.setHeader("Access-Control-Allow-Origin", "*");
+
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    
     mongoose.connect(ConnectionString).then(()=>{
         
         accountsModel.find({
@@ -56,6 +59,5 @@ export default function handle(req,res){
             res.json({result:'n'})
         })
 
-    })
     })
 }

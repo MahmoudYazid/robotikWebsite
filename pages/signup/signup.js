@@ -30,8 +30,8 @@ export default function signup() {
     )
   }
 
-  const FetchData=()=>{
-    fetch(MakeSignUpApi(phone,email,name_,password)).then((response)=>{
+  const FetchData=async()=>{
+    await fetch(MakeSignUpApi(phone,email,name_,password)).then((response)=>{
       response.json().then((data)=>{
          if(data.result==='n'){
         setbatchvisibility('visible')
