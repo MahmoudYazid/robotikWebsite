@@ -49,7 +49,7 @@ export default  function handler(req,res) {
                         startdate: 'not answered',
                        
                     })
-                    return res.json({ 'results':'ok' })
+                    return res.json({ 'results':'yes its this case' })
 
                 } 
                  
