@@ -15,10 +15,9 @@ export default  function handler(req,res) {
 
     mongoose.connect(ConnectionString).then(()=>{
         requestssModel.find({
-              affiliateid:req.query.affiliateid,
+             
             clientid:req.query.clientid,
             requestservice:req.query.requestservice,
-            cost:req.query.cost,
             answer:'not answered'
 
         }).then((findeddata)=>{
@@ -27,10 +26,8 @@ export default  function handler(req,res) {
             }else {
             if(req.query.requestservice) {
                   requestssModel.find({
-              affiliateid:req.query.affiliateid,
             clientid:req.query.clientid,
             requestservice:req.query.requestservice,
-            cost:req.query.cost,
             answer:'yes'
 
         }).then((answer)=>{
