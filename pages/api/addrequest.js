@@ -41,15 +41,17 @@ export default  function handler(req,res) {
                 if (enddate < today) {
                     requestssModel.findOneAndUpdate({ _id: answer[0]._id},{
                       
-                        requestdate: Date(),
+                        requestdate: `${String(today)}`,
                         answer: 'not answered',
                         answercomment: 'not answered',
                         
               
                         startdate: 'not answered',
                        
+                    }).then(()=>{
+                            return res.json({ 'results':'yes its this case' })
                     })
-                    return res.json({ 'results':'yes its this case' })
+                
 
                 } 
                  
