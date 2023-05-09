@@ -38,7 +38,7 @@ export default  function handler(req,res) {
 
                 enddate.setDate(enddate.getDate() + parseInt(answer[0].enddate))
 
-                if (enddate < today) {
+                if (enddate > today) {
                     requestssModel.findOneAndUpdate({ _id: `${answer[0]._id}`},{
                         affiliateid: req.query.affiliateid,
                         clientid: req.query.clientid,
