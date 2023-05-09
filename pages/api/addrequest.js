@@ -38,20 +38,16 @@ export default  function handler(req,res) {
 
                 enddate.setDate(enddate.getDate() + parseInt(answer[0].enddate))
 
-                if (enddate > today) {
-                    requestssModel.findOneAndUpdate({ _id: `${answer[0]._id}`},{
-                        affiliateid: req.query.affiliateid,
-                        clientid: req.query.clientid,
-                        requestservice: req.query.requestservice,
-                        cost: req.query.cost,
-                        profit: req.query.profit,
+                if (enddate < today) {
+                    requestssModel.findOneAndUpdate({ _id: answer[0]._id},{
+                      
                         requestdate: Date(),
                         answer: 'not answered',
                         answercomment: 'not answered',
-                        AffiliateNationalCard: req.query.affiliatenationalcard,
-                        profit: req.query.profit,
+                        
+              
                         startdate: 'not answered',
-                        enddate: req.query.enddate,
+                       
                     })
                     return res.json({ 'results':'ok' })
 
