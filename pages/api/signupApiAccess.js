@@ -8,7 +8,8 @@ export default  function handle(req,res){
 
     res.setHeader("Access-Control-Allow-Origin", "*");
 
- 
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
 
     
     mongoose.connect(ConnectionString).then(()=>{
@@ -24,7 +25,7 @@ export default  function handle(req,res){
         }).then((result)=>{
            console.log(result.length)
            if(result.length>0){
-            return res.json({result:'n'})
+            res.json({result:'n'})
            }
             if(result.length<=0){
                
@@ -39,7 +40,7 @@ export default  function handle(req,res){
 
                 })
                 newaccount.save().then(()=>{
-                    return res.json({result:'e'})
+                    res.json({result:'e'})
                 })
 
                 
@@ -50,12 +51,12 @@ export default  function handle(req,res){
 
 
             }else{
-                    return res.json({result:'n'})
+                    res.json({result:'n'})
             }
            
 
         }).catch((err) =>{
-            return res.json({result:'n'})
+            res.json({result:'n'})
         })
 
     })

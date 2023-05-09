@@ -11,7 +11,7 @@ export default function id() {
   const AddAffiliateReq=async()=>{
    
     const id = router.query.id;
-    const req= await fetch(MakeAddRequestApi('not existed',`${id}`,'convert to Affiliate','0',`${CardId}`,'0'))
+    const req= await fetch(MakeAddRequestApi('365','not existed',`${id}`,'convert to Affiliate','0',`${CardId}`,'0'))
     const res = req.json().then((response)=>{
       console.log(response.results)
     if(response.results==='n'){

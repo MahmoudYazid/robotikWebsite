@@ -48,8 +48,8 @@ export default  function handler(req,res) {
             answercomment:'not answered',
             AffiliateNationalCard:req.query.affiliatenationalcard,
             profit:req.query.profit,
-            startdate: 'not accepted yet',
-            enddate: 'not accepted yet',
+            startdate:'not answered',
+            enddate: req.query.enddate,
 
             
         })
