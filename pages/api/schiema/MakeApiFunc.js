@@ -1,10 +1,10 @@
 
 
 export const MakeSignUpApi=(phone,email,name,password_)=>{
-    return `http://localhost:3000/api/signupApiAccess?name=${name}&email=${email}&phone=${phone}&password=${password_}`;
+    return `http://185.211.4.42:3000/api/signupApiAccess?name=${name}&email=${email}&phone=${phone}&password=${password_}`;
 }
 export const MakeshowProductsApi=()=>{
-    return `http://localhost:3000/api/getproducts`;
+    return `http://185.211.4.42:3000/api/getproducts`;
 }
 
 export const MakeLoginApi=(email_,password_)=>{
