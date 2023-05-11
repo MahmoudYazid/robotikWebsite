@@ -47,15 +47,7 @@ export default function id({checkdata,type,products}) {
     }
     
   }, []);
-  const AgreeBatchComponent = () => {
-    return (
-      <div className={`bg-green-700 border border-green text-white px-4 py-3 rounded relative ${Agreebatchvisibility}`} role="alert">
-        <strong className="font-bold">{id}</strong>
 
-
-      </div>
-    )
-  }
    
   return (
     <div className="grid grid-rows-[.2fr_1fr] md:grid-rows-[.2fr_1fr] w-full h-full bg-white" >
@@ -69,20 +61,16 @@ export default function id({checkdata,type,products}) {
             <GoSignOut size={50}></GoSignOut>
           <p>sign out</p>
           </Link>
-          <div className='m-3  cursor-pointer   hover:text-green-700' onClick={() => {setAgreebatchvisibility('visible')}}>
-            <RiAccountCircleLine size={50}></RiAccountCircleLine>
-            <p>MyIp</p></div>
+
           <Link href={`/Main/requests/${id}`} className='m-3 h-10 cursor-pointer  hover:text-green-700'>
             <IoGitPullRequestSharp size={50}></IoGitPullRequestSharp>
             <p>Requests</p></Link>
-          <Link href={`/Main/ConvertAcountToAff/${id}`} className='m-3 h-10  cursor-pointer  hover:text-green-700'>
-            <TbAffiliate size={50}></TbAffiliate>
-            <p>be affiliate</p></Link>
+
     
     </div>
     
    </div>
-<AgreeBatchComponent></AgreeBatchComponent>
+
     </div>
   )
 }

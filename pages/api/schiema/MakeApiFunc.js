@@ -19,8 +19,8 @@ export const MakeCheckExistanceApi=(id_)=>{
 export const MakeContineousCheckApi=(id_,password_)=>{
     return `http://185.211.4.42:3000/api/contenouscheck?id=${id_}&&password=${password_}`;
 }
-export const MakeAddRequestApi = (enddate,affiliateid_,clientid_,requestservice_,cost_,affiliatenationalcard_,profit_)=>{
-    return `http://185.211.4.42:3000/api/addrequest?enddate=${enddate}&&affiliateid=${affiliateid_}&&clientid=${clientid_}&&requestservice=${requestservice_}&&cost=${cost_}&&affiliatenationalcard=${affiliatenationalcard_}&&profit=${profit_}`;
+export const MakeAddRequestApi = (enddate, clientid_, requestservice_, cost_, profit_,code_)=>{
+    return `http://185.211.4.42:3000/api/addrequest?enddate=${enddate}&clientid=${clientid_}&requestservice=${requestservice_}&cost=${cost_}&profit=${profit_}&code=${code_}`;
 }
 export const MakeGetRequestByidApi=(_id)=>{
     return `http://185.211.4.42:3000/api/getrequestsdata?id=${_id}`;
