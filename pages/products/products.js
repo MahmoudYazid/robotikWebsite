@@ -57,7 +57,7 @@ export default function index({ ProductFetchedData }) {
                       <p key={Math.random()}  className=" text-sm mb-4 ">{FetchedData.Description}</p>
                       <div key={Math.random()} className="flex justify-between items-center">
                         <p key={Math.random()}  className="text-lg font-bold m-3">Price:{FetchedData.price}$</p>
-                        <Link key={Math.random()} href={`http://${FetchedData.Link}`} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-200">Download</Link>
+                        <Link key={Math.random()} href={`${FetchedData.Link}`} className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition duration-200">Download</Link>
                         </div>
                       
                  
