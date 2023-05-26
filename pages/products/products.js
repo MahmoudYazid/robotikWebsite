@@ -31,7 +31,7 @@ export default function index({ ProductFetchedData }) {
             <p key={Math.random()}  className='mt-5  inline' onClick={() => { setselected(data.ProductName) }}>{data.ProductName}</p>
           </div>
         ))}
-        <div className='text-center flex flex-row hover:text-green-700 justify-center '>
+        <div onClick={() => { window.location.href = '/' }} className='text-center flex flex-row hover:text-green-700 justify-center '>
      
           <p className='mt-5  inline' onClick={() => { window.location.href='/' }}>Back</p>
         </div>
