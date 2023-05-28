@@ -22,6 +22,7 @@ import { BsPhoneVibrate, BsBackspace } from 'react-icons/bs'
 import Link from 'next/link';
 import { RiGooglePlayFill } from 'react-icons/ri';
 import { redirect } from "./LeftSide/LeftSide"
+import { Head } from "next/document"
 const Contact =()=>{
   return(
     <div id='contact' className="  w-100 h-20  text-white  text-white bg-white grid grid-cols-[1fr] mt-3 ">
@@ -346,6 +347,7 @@ export default function Home() {
 
   return (
     <div className="grid grid-row md:grid-row w-full h-full bg-white" >
+     
       <div className="w-full h-50 justify-center flex flex-row bg-black ">
         <Image src='/without_any_thing.png' width={'700'} height={'700'} alt="sss" className="self-end "></Image>
       </div>
