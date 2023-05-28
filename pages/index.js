@@ -27,10 +27,6 @@ const Contact =()=>{
     <div id='contact' className="  w-100 h-20  text-white  text-white bg-white grid grid-cols-[1fr] mt-3 ">
 
       <div className="w-full h-50 text-black justify-center text-white flex flex-row text-white flex-wrap cursor-pointer ">
-      
-
-
-
         <div
           className="flex flex-col text-black m-5 hover:text-green-600 cursor-pointer"
           onClick={() => redirect("facebook")}
@@ -52,11 +48,7 @@ const Contact =()=>{
           <MdWhatsapp size={55}></MdWhatsapp>
           Whats-App
         </div>
-        <div className="flex text-black flex-col m-5 hover:text-green-600 cursor-pointer ">
-          <BsPhoneVibrate size={50}> </BsPhoneVibrate>
-          <a href="tel:00201005648558">Phone</a>
-        </div>
-
+      
         <div className="flex text-black flex-col m-5 hover:text-green-600 cursor-pointer " onClick={() => redirect("googleplay")}>
           <RiGooglePlayFill size={50}> </RiGooglePlayFill>
           <p>Google play</p>
