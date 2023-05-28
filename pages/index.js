@@ -146,13 +146,11 @@ const WebsiteService = () => {
     <div id='WebsitesServices' className="  ltr:pl-4 w-100 h-100  text-white  text-black bg-black  md:flex-row flex flex-col  justify-center text-center   mb-3 mt-10">
      
 
-      <div className=" text-center flex flex-col text-center  text-white ">
+      <div className=" text-center flex flex-col text-center  justify-center align-center  text-white ">
         <h1 className="text-3xl font-bold visible mt-2 ">We will make your website</h1>
         <div className="w-12/12 text-lg w-100 mt-2  flex flex-row text-center justify-center align-center   text-white">
           <p className=" font-bold visible w-8/12 ">Our team specializes in creating exceptional Android apps tailored to meet your specific needs. With our Android app development services, we bring your ideas to life and provide you with a powerful tool to engage and connect with
-            your target audience on the world's most popular mobile platform.Our dedicated team of Android app developers is passionate about turning your vision into a reality. We understand that every business has unique requirements, and that's why we take a personalized approach to each project. By closely collaborating with you, we ensure that your Android app reflects your brand identity and fulfills your specific goals.
-
-            Our Android app development services cover a wide range of industries and functionalities.</p>
+            your target audience on the world's most popular mobile platform.Our dedicated team of Android app developers is passionate about turning your vision into a reality. We understand that every business has unique requirements</p>
 
 
         </div>
@@ -178,67 +176,6 @@ const CoursesService = () => {
     <div id='courses' className="ltr:pl-4 w-100 h-100  text-white  text-black bg-white  md:flex-row flex flex-col  justify-center text-center   mb-3 mt-10">
       <Image src='/robotikacademy2.png' width={'500'} height={'500'} alt="sss" className="md:animate-pulse self-end h-full "></Image>
 
-
-      <div className=" text-center flex flex-col text-center  text-black ">
-        <div className="w-full h-50 justify-center text-white flex flex-row flex-wrap text-white bg-white ">
-
-
-
-          <div  className="flex flex-col m-5   h-20  text-black hover:text-green-600 cursor-pointer text-center">
-            <DiPython size={100} ></DiPython>
-            <p>Basics Course</p>
-          </div>
-
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center">
-            <DiReact size={100} ></DiReact>
-            <p>react Js</p>
-          </div>
-
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center">
-            <BsFiletypeHtml size={100} ></BsFiletypeHtml>
-            <p>html</p></div>
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center ">
-            <AiFillHtml5 size={100} ></AiFillHtml5>
-            <p>css</p></div>
-
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center ">
-            <SiCreatereactapp size={100} ></SiCreatereactapp>
-            <p>react native</p></div>
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center ">
-            <SiJavascript size={100} ></SiJavascript>
-            <p>Javascript</p></div>
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center ">
-            <SiExpress size={100} ></SiExpress>
-            <p>express Js</p></div>
-
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center ">
-            <FaNodeJs size={100} ></FaNodeJs>
-            <p>Node js</p></div>
-
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center ">
-            <TbBrandNextjs size={100} ></TbBrandNextjs>
-            <p>Next Js</p></div>
-
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center ">
-            <GiCampingTent size={100} ></GiCampingTent>
-            <p>Full-stack camp</p></div>
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center ">
-            <MdOutlineShapeLine size={100} ></MdOutlineShapeLine>
-            <p>Frontend camp</p></div>
-          <div className="flex flex-col m-5  h-20  text-black hover:text-green-600 cursor-pointer text-center ">
-            <TbServerCog size={100} ></TbServerCog>
-            <p>Backend camp</p></div>
-
-        </div>
-
-        <div className="w-12/12 text-lg w-50 mt-2 flex flex-row text-center justify-center align-center   text-white">
-          <a onClick={() => redirect("whats")} className=" hover:underline w-7/12 text-lg mt-2 cursor-pointer rounded-lg text-green-500 ">
-            contact With Us Now and enroll your name Via WhatApp
-
-
-          </a>
-        </div>
-      </div>
 
 
     </div>
@@ -323,7 +260,11 @@ const AskAboutTheCurculums = () => {
             <TbServerCog size={100} ></TbServerCog>
             <p>Backend camp</p></div>
 
+          <a onClick={() => redirect("whats")} className=" hover:underline w-7/12 text-lg mt-2 cursor-pointer rounded-lg text-green-500 ">
+            contact With Us Now and enroll your name Via WhatApp
 
+
+          </a>
         
 
         </div>
