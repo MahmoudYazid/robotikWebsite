@@ -298,7 +298,6 @@ export default function Home() {
       <AndroidService></AndroidService> 
     <WebsiteService></WebsiteService>
       <CoursesService></CoursesService>
-      <AskAboutTheCurculums></AskAboutTheCurculums>
     <Contact></Contact>
      
       
