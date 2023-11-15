@@ -12,10 +12,10 @@ const GeneralFont = Space_Grotesk({
 const SwiperComponent = () => {
 
     const Card = ({ title, hreflink, subtitle }) => (
-        <div class="card">
+        <div class="card ">
             <div class="card-border-top">
             </div>
-            <img class="img" src='/3101abeb-eb95-4834-b817-b3f559b1536e.jpg'>
+            <img class="img" src='/website icon.png'>
             </img>
             <span>{title}</span>
             <p class="job"> {subtitle}</p>
@@ -51,7 +51,7 @@ const SwiperComponent = () => {
     }, []);
 
     return (
-        <div class="swiper bg-[#000437] w-[90vw] w-[100vw] mySwiper flex flex-cols gap-5">
+        <div id='pastwork' class="swiper bg-[#000437] w-[90vw] w-[100vw] mySwiper flex flex-cols gap-5">
             <Head>
                
             </Head>
@@ -68,7 +68,7 @@ const SwiperComponent = () => {
                 </div>
 
                 <div class="swiper-slide">
-                    <Card title={'pharmacy Managment system '} hreflink={'https://play.google.com/store/apps/details?id=com.pharmaclonetrailer&hl=en_US'} subtitle={'business Software'} ></Card>
+                    <Card title={'pharmacy Management  '} hreflink={'https://play.google.com/store/apps/details?id=com.pharmaclonetrailer&hl=en_US'} subtitle={'business Software'} ></Card>
                 </div>
               
                 

@@ -7,17 +7,21 @@ import Slider from '../components/slider'
 import Footer from '../components/footer'
 
 import Title from '../components/title'
-import ContactBar from '../components/contactBar'
+import OurServiceTitle from '../components/OurServiceTitle'
+import Ourservices from '../components/ourservices'
 export default function index() {
   return (
-    <main className='gap-3 overflow-x-hidden  bg-[#000437]  w-screen h-screen grid lg:grid-rows-[5rem_minmax(30rem,_1fr)_10rem_repeat(1,minmax(30rem,_1fr))_minmax(25rem,_1fr)_2rem_minmax(30rem,_1fr)_8rem] '>
+    <main id='main' className='gap-3 overflow-x-hidden  bg-[#000437]  w-screen h-screen grid lg:grid-rows-[5rem_minmax(30rem,_1fr)_2rem_minmax(30rem,_1fr)_repeat(1,minmax(30rem,_1fr))_minmax(25rem,_1fr)_2rem_minmax(30rem,_1fr)_8rem] '>
       <Navbar></Navbar>
       <Hero></Hero>
-      <ContactBar></ContactBar>
+      <OurServiceTitle></OurServiceTitle>
+      <Ourservices ></Ourservices>
       <SecondHero></SecondHero>
       <Thirdhero ></Thirdhero>
       <Title></Title>
-      <Slider className='bg-white w-[100%] h-[100%]'></Slider>
+      <Slider ></Slider>
+     
+
       <Footer></Footer>
       
     </main>

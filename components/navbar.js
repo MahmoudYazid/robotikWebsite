@@ -10,30 +10,26 @@ export default function navbar() {
     <>
       <section className=' pl-[3%] pr-[3%] lg:pl-[15%] lg:pr-[15%] bg-[#000437] w-[100%] h-[100%] flex flex-row items-center justify-start'>
 
-      <img src='/logowithoubackgroundsvg.svg' className='w-[8rem] h-[8rem]'></img>
+        <img src='/logowithoubackgroundsvg.svg' className='w-[8rem] h-[8rem] 	'></img>
       <div className='flex flex-row gap-3 ml-auto'>
 
         
-        <button
-          class="lg:flex hidden text-white relative px-8 py-2 rounded-md  isolation-auto z-10  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
-        >
-          Pricing
-        </button>
-        <button
+       
+          <a href='#pastwork'
             class="lg:flex hidden text-white relative px-8 py-2 rounded-md  isolation-auto z-10  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
         >
-          order
-        </button>
-        <button
+          past work
+        </a>
+          <a href='#service'
             class="lg:flex hidden text-white relative px-8 py-2 rounded-md  isolation-auto z-10  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
         >
           our service
-        </button>
-        <button
+        </a>
+        <a href='#contact'
             class="lg:flex hidden text-white relative px-8 py-2 rounded-md  isolation-auto z-10  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
         >
 Contact
-        </button>
+        </a>
 
           <CiMenuFries onClick={()=>SideBarVisibilityFunc()} size={30} className='text-white flex lg:hidden' />
 
@@ -46,26 +42,21 @@ Contact
         <div className='flex flex-col  gap-3 '>
 
 
-          <button
+          <a href='#pastwork'
             class=" text-white relative px-8 py-2 rounded-md  isolation-auto z-10  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
           >
-            Pricing
-          </button>
-          <button
-            class=" text-white relative px-8 py-2 rounded-md  isolation-auto z-10  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
-          >
-            order
-          </button>
-          <button
+            past work
+          </a>
+          <a href='#service'
             class=" text-white relative px-8 py-2 rounded-md  isolation-auto z-10  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
           >
             our service
-          </button>
-          <button
+          </a>
+          <a href='#contact'
             class=" text-white relative px-8 py-2 rounded-md  isolation-auto z-10  before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-lime-500 before:-z-10 before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700"
           >
             Contact
-          </button>
+          </a>
 
           <button
           onClick={()=>SideBarVisibilityFunc()}
