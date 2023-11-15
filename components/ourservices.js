@@ -75,7 +75,7 @@ const SwiperComponent = () => {
   }, []);
 
   return (
-    <div id='service' class="swiper bg-[#000437] w-[90vw] w-[100vw] mySwiper flex flex-cols gap-5">
+    <div id='service' class="swiper bg-[#000437] h-[30rem] w-[100vw] mySwiper flex flex-cols gap-5">
       <Head>
 
       </Head>
@@ -98,7 +98,7 @@ const SwiperComponent = () => {
         </div>
 
       </div>
-
+      <div className='swiper-pagination'></div>
     </div>
 
 

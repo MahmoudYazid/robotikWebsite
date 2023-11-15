@@ -11,7 +11,7 @@ import OurServiceTitle from '../components/OurServiceTitle'
 import Ourservices from '../components/ourservices'
 export default function index() {
   return (
-    <main id='main' className='gap-3 overflow-x-hidden  bg-[#000437]  w-screen h-screen grid lg:grid-rows-[5rem_minmax(30rem,_1fr)_2rem_minmax(30rem,_1fr)_repeat(1,minmax(30rem,_1fr))_minmax(25rem,_1fr)_2rem_minmax(30rem,_1fr)_8rem] '>
+    <main id='main' className='gap-3 overflow-x-hidden  bg-[#000437]  w-screen h-screen grid lg:grid-rows-[5rem_minmax(30rem,_1fr)_2rem_minmax(30rem,_1fr)_repeat(1,minmax(30rem,_1fr))_minmax(25rem,_1fr)_2rem_minmax(30rem,1fr)_8rem] '>
       <Navbar></Navbar>
       <Hero></Hero>
       <OurServiceTitle></OurServiceTitle>
