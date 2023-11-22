@@ -20,7 +20,7 @@ app.prepare().then(() => {
     return handle(req, res);
   });
 
-  https.createServer(httpsOptions, server).listen(443, (err) => {
+  https.createServer(httpsOptions, server).listen(3000, (err) => {
     if (err) throw err;
     console.log('> Ready on https://localhost:443');
   });
